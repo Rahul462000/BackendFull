@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "a basic app to deploy",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,5 +12,9 @@
     "node"
   ],
   "author": "rahul",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  }
 }
