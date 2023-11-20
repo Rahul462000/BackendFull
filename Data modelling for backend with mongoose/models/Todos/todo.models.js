@@ -11,6 +11,7 @@ const todoSchema = new Schema(
       default: false,
     },
     cratedby: {
+      // this entry is made to get the name of the user who created this entry
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
     },
