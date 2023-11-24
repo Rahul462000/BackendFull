@@ -1,13 +1,24 @@
+// require("dotenv").config({ path: "./env" });
+import dotenv from "dotenv";
 import mongoose from "mongoose";
-import { DB_NAME } from "./constants";
+// import { DB_NAME } from "./constants";
 import express from "express";
+import connectDB from "./db/index.js";
 const app = express();
+
+// configure the dotenv variable
+dotenv.config({
+  path: "./env",
+});
 
 // always wrap the db talking in try and catch
 // and always use async and await method for taking result from db
 
 // here i have immediately executed the funciton
 // putting semicoloun before ifee
+
+// new connection method for db called here
+connectDB();
 
 /*  first approach
 (async () => {
