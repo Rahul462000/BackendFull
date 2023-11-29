@@ -10,6 +10,7 @@ function App() {
     axios
       .get("/api/jokes")
       .then((response) => {
+        console.log(response.data);
         setJokes(response.data);
       })
       .catch((error) => {
@@ -28,6 +29,7 @@ function App() {
         <div key={joke.id}>
           <h3>{joke.title}</h3>
           <p>{joke.content}</p>
+          <p>CeatedBy:{joke.creatorName}</p>
         </div>
       ))}
     </>

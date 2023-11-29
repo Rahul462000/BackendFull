@@ -12,21 +12,25 @@ app.get("/api/jokes", (req, res) => {
       id: 1,
       title: "A joke",
       content: "This is a joke",
+      creatorName: "creatorOne",
     },
     {
       id: 2,
       title: "A joke",
       content: "This is a joke2",
+      creatorName: "creatorTwo",
     },
     {
       id: 3,
       title: "A joke",
       content: "This is a joke3",
+      creatorName: "creatorThree",
     },
     {
       id: 4,
       title: "A joke",
       content: "This is a joke4",
+      creatorName: "creatorFour",
     },
   ];
   res.send(jokes);
